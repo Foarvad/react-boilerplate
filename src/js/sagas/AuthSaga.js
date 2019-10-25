@@ -39,7 +39,7 @@ export class AuthSaga {
         NotificationActions.setNotification({
           module: 'login',
           type: 'error',
-          message: 'Не удалось войти с указанными учетными данными',
+          message: 'Can\'t login with provided credentials',
         }),
       );
     }

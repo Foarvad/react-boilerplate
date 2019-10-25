@@ -88,7 +88,7 @@ class Login extends Component {
               <InputSet>
                 <InputWrapper>
                   <StyledFormikField
-                    label="Логин"
+                    label="Username"
                     type="text"
                     name="username"
                     errors={errors}
@@ -97,7 +97,7 @@ class Login extends Component {
                 </InputWrapper>
                 <InputWrapper>
                   <StyledFormikField
-                    label="Пароль"
+                    label="Password"
                     type="password"
                     name="password"
                     errors={errors}
@@ -110,7 +110,7 @@ class Login extends Component {
               </NotificationWrapper>
               <ButtonWrapper>
                 <StyledButton type="submit" disabled={process === 'login'} inverted>
-                  Войти
+                  Login
                 </StyledButton>
               </ButtonWrapper>
             </Form>

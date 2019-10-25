@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
+import PageTitle from 'js/components/common/PageTitle';
 
 
 const mapStateToProps = () => ({});
@@ -14,8 +16,12 @@ class Dashboard extends Component {
   static propTypes = {};
 
   render() {
-    return <div>Dashboard</div>;
+    return <Wrapper><PageTitle>Dashboard</PageTitle></Wrapper>;
   }
 }
 
 export default Dashboard;
+
+const Wrapper = styled.div`
+  height: 3000px;
+`;

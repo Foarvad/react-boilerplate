@@ -98,9 +98,7 @@ class Layout extends Component {
 export default Layout;
 
 const MainWrapper = styled.div`
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  min-height: 100vh;
 `;
 
 const Body = styled.div`
@@ -115,7 +113,6 @@ const Content = styled.div`
   padding: 40px 40px 25px 40px;
   box-shadow: 0 10px 21px 0 rgba(173, 182, 217, 0.3);
   background: #fff;
-  overflow: hidden;
   ${media.xs} {
     padding: 30px;
   }

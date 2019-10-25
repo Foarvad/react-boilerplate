@@ -37,7 +37,7 @@ class Header extends Component {
         </HeaderLeft>
         <HeaderRight>
           <UserProfile onClick={handleToggleDropdown}>
-            {isAuthorized ? 'Учетная запись' : 'Авторизация'}
+            {isAuthorized ? 'Profile' : 'Authorization'}
             <StyledUserIcon />
           </UserProfile>
         </HeaderRight>

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import * as UIActions from 'js/actions/UIActions';
 
-import RoomModal from 'js/components/modals/RoomModal';
+import SimpleModal from 'js/components/modals/SimpleModal';
 
 
 const mapStateToProps = ({ UI }) => ({
@@ -31,7 +31,7 @@ class Modal extends Component {
   renderModal = (type) => {
     switch (type) {
       case 'room':
-        return <RoomModal />;
+        return <SimpleModal />;
       default:
         return null;
     }

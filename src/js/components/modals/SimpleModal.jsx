@@ -22,7 +22,7 @@ const mapDispatchToProps = dispatch => ({
   mapStateToProps,
   mapDispatchToProps,
 )
-class RoomModal extends Component {
+class SimpleModal extends Component {
   static propTypes = {
     modalOptions: PropTypes.object.isRequired,
 
@@ -35,13 +35,13 @@ class RoomModal extends Component {
     return (
       <>
         <ModalHeader handleHideModal={hideModal}>{modalOptions.title}</ModalHeader>
-        <ModalContent>asd</ModalContent>
+        <ModalContent>{modalOptions.content}</ModalContent>
       </>
     );
   }
 }
 
-export default RoomModal;
+export default SimpleModal;
 
 const ModalContent = styled.div`
   padding: 25px;

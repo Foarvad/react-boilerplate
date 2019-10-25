@@ -4,11 +4,6 @@
   font-family: Roboto;
 }
 
-html,
-body {
-  overflow: hidden;
-}
-
 .react-calendar__tile--active:enabled, .react-calendar__tile--active:enabled:focus {
   background: #c65658;
 }
